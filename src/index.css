@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(51, 51, 51);
+}
+
+body {
+  background-color: rgb(251, 248, 246);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.container .wrapper {
+  height: 100%;
+  max-width: 324px;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.wrapper h1 {
+  line-height: unset;
+  margin-top: 0;
+  font-family: Inter, sans-serif;
+  padding: 8px 12px;
+  font-size: 18px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.wrapper .form-field {
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field .form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-field span {
+  font-family: Inter, sans-serif;
+  padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
+.form-field button {
+  border: 0px;
+  outline: 0px;
+  height: 54px;
+  flex-grow: 1;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16.5px;
+  cursor: pointer;
+}
+
+.form-field button.selected {
+  background-color: rgb(51, 51, 51);
+  color: #FFF;
+}
+
+.form-field button:first-child {
+  margin-left: 0px;
+}
+
+.form-field button {
+  margin-left: 12px;
 }
