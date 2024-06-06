@@ -31,7 +31,8 @@ body {
   margin-top: 0;
   font-family: Inter, sans-serif;
   padding: 8px 12px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -56,12 +57,17 @@ body {
 .form-field button {
   border: 0px;
   outline: 0px;
-  height: 54px;
+  height: 45px;
   flex-grow: 1;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 16.5px;
   cursor: pointer;
+}
+
+.form-field code {
+  padding: 12px;
+  background-color: #F7F7F7;
 }
 
 .form-field button.selected {
